@@ -1,0 +1,119 @@
+// VARIABLE USED IN TEXT COLORS,CREATED FOR TO 
+$Text-color-white: #EEF4F9;
+$Text-color-black: #000000;
+$Text-color-gray: #7A7777;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.landing__page {
+  font-family: 'Work Sans';
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-image: url("https://res.cloudinary.com/deotmwbo8/image/upload/v1678026925/tentwenty/pexels-tim-mossholder-974314_1_rgrnnk.png");
+}
+
+.landing__page_content {
+  margin-top: 228px;
+  margin-left: 135px;
+}
+
+.landing__page_content_Header_welcomeTag {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $Text-color;
+  margin-bottom: 24px;
+  /* add some bottom margin to create space between this element and the next one */
+}
+
+.landing__page_content_Header_main {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  color: $Text-color-white;
+  text-transform: capitalize;
+
+}
+
+.landing__page_content__thumb_content {
+  position: relative;
+  /* Add this to make pseudo-element work */
+  height: 138px;
+  width: 138px;
+  border: 1px solid #e9ebec;
+  margin-top: 169px;
+}
+
+.landing__page_content__thumb_content::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  /* Adjust to half the height of border-top */
+  right: -1px;
+  /* Adjust to half the width of border-right */
+  border-top: 4px solid white;
+  border-right: 4px solid white;
+  width: 50%;
+  height: 50%;
+}
+
+/* Rest of your CSS */
+.centered_text {
+  color: $Text-color-white;
+}
+
+.landing__page_content__thumb__text {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: $Text-color-white;
+  position: relative;
+  top: 57px;
+  left: 50px;
+}
+
+.landing__page_content__thumb__img {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.Product {
+  margin-top: 153px;
+}
+
+.Product__header {
+  text-align: center;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 72px;
+  /* or 129% */
+
+  text-align: center;
+  letter-spacing: -1px;
+
+  color: $Text-color-black;
+}
+
+.Product__subtext {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 28px;
+  text-align: center;
+
+ color: $Text-color-gray
+}

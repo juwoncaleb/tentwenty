@@ -1,0 +1,163 @@
+.header {
+  background-color: white;
+  /* or "position: relative" if its parent element is positioned */
+  position: relative;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 101px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header__elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__elements_navlink {
+  display: flex;
+  margin-left: 59px;
+  margin-top: 40px;
+  margin-bottom: 41px;
+  height: 20px;
+  width: 376px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.header__elements_navlink p:not(:first-child) {
+  margin-left: 20px;
+}
+
+.header__elements__button {
+  margin-top: 32px;
+  margin-right: 33px;
+  margin-bottom: 33px;
+  height: 36px;
+  width: 148px;
+  display: flex;
+  border: 1px solid #000000;
+}
+
+.header__elements__button__text {
+  margin-left: 16px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17.6px;
+}
+
+.header__elements__button__arrow {
+  margin-left: 16px;
+  margin-top: 12px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  width: 18px;
+  height: 14px;
+  color: #221F20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.landing__page {
+  font-family: "Work Sans";
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-image: url("https://res.cloudinary.com/deotmwbo8/image/upload/v1678026925/tentwenty/pexels-tim-mossholder-974314_1_rgrnnk.png");
+}
+
+.landing__page_content {
+  margin-top: 228px;
+  margin-left: 135px;
+}
+
+.landing__page_content_Header_welcomeTag {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #EEF4F9;
+  margin-bottom: 24px;
+  /* add some bottom margin to create space between this element and the next one */
+}
+
+.landing__page_content_Header_main {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  color: #EEF4F9;
+  text-transform: capitalize;
+}
+
+.landing__page_content__thumb_content {
+  position: relative; /* Add this to make pseudo-element work */
+  height: 138px;
+  width: 138px;
+  border: 1px solid #e9ebec;
+  margin-top: 169px;
+}
+
+.landing__page_content__thumb_content::before {
+  content: "";
+  position: absolute;
+  top: -1px; /* Adjust to half the height of border-top */
+  right: -1px; /* Adjust to half the width of border-right */
+  border-top: 4px solid white;
+  border-right: 4px solid white;
+  width: 50%;
+  height: 50%;
+}
+
+/* Rest of your CSS */
+.centered_text {
+  color: #EEF4F9;
+}
+
+.landing__page_content__thumb__text {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #EEF4F9;
+  position: relative;
+  top: 57px;
+  left: 50px;
+}
+
+.landing__page_content__thumb__img {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.Product {
+  margin-top: 153px;
+}
+
+.Product__header {
+  text-align: center;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  /* or 129% */
+  text-align: center;
+  letter-spacing: -1px;
+  color: #000000;
+}/*# sourceMappingURL=global.css.map */

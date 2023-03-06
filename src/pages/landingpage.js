@@ -15,6 +15,7 @@ export default function LandingPage() {
 
   // BACKGROUND IMAGE CHANGE LOGIC
   const [backgroundImageUrl, setBackgroundImageUrl] = useState(url[0]);
+  const [currentUrlIndex, setCurrentUrlIndex] = useState(0);
 
   const handleButtonClick = () => {
     // Increment the current index by 1 and reset to 0 if it reaches the end of the array
@@ -23,7 +24,6 @@ export default function LandingPage() {
     // Set the new background image URL based on the current index
     setBackgroundImageUrl(url[currentUrlIndex]);
   };
-
   // TRIGGER ANIMATION 
   const [isClicked, setIsClicked] = useState(false);
   const handleTap = () => {

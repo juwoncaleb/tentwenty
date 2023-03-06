@@ -2,6 +2,7 @@
 $Text-color-white: #EEF4F9;
 $Text-color-black: #000000;
 $Text-color-gray: #7A7777;
+;
 
 * {
   margin: 0;
@@ -13,7 +14,6 @@ $Text-color-gray: #7A7777;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  background-image: url("https://res.cloudinary.com/deotmwbo8/image/upload/v1678026925/tentwenty/pexels-tim-mossholder-974314_1_rgrnnk.png");
 }
 
 .landing__page_content {
@@ -27,7 +27,7 @@ $Text-color-gray: #7A7777;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: $Text-color;
+  color: $Text-color-white;
   margin-bottom: 24px;
   /* add some bottom margin to create space between this element and the next one */
 }
@@ -90,8 +90,14 @@ $Text-color-gray: #7A7777;
 
 .Product {
   margin-top: 153px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
 }
-
+.framer{
+  height: 100vh;
+  background-color: brown;
+}
 .Product__header {
   text-align: center;
   font-family: 'Work Sans';
@@ -107,13 +113,54 @@ $Text-color-gray: #7A7777;
   color: $Text-color-black;
 }
 
-.Product__subtext {
+
+.Product__header {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 54px;
+  font-size: 56px;
+  line-height: 72px;
+  /* or 129% */
+
+  text-align: center;
+  letter-spacing: -1px;
+
+  color: $Text-color-black
+}
+
+.Product_sub {
+  text-align: center;
+  color: $Text-color-gray;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 28px;
   text-align: center;
+  margin-left: 336.11px;
+  margin-right: 355.89px;
+  margin-top: 30px;
 
- color: $Text-color-gray
 }
+
+.Product__image {
+  display: flex;
+  justify-content: center;
+}
+.diva{
+  background-color: #7A7777;
+  height: 50px;
+  width: 50px;
+ 
+}
+.fonnty{
+  font-size: 50px
+  
+}
+.forty{
+  margin-bottom: 400px;
+  font-size: 25px;
+  clip-path: polygon(0,100%,);
+
+}
+

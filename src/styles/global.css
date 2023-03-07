@@ -10,7 +10,7 @@
   margin-right: 20px;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .header {
     height: 81px;
     margin-left: 0px;
@@ -24,7 +24,7 @@
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .header__elements__desktop {
     display: none;
   }
@@ -62,8 +62,23 @@
   border: 1px solid #000000;
 }
 
-@media only screen and (max-width: 414px) {
-  .header__elements__button {
+.header__elements__button_mob {
+  margin-top: 32px;
+  margin-right: 33px;
+  margin-bottom: 33px;
+  height: 36px;
+  width: 148px;
+  display: flex;
+  border: 1px solid #000000;
+}
+
+@media only screen and (min-width: 425px) {
+  .header__elements__button_mob {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .header__elements__button_mob {
     margin-left: 27.6px;
     position: relative;
     bottom: 10px;
@@ -75,6 +90,11 @@
   justify-content: space-evenly;
 }
 
+@media only screen and (min-width: 425px) {
+  .header__elements__hamburgermenu {
+    display: none;
+  }
+}
 .header__elements__menu {
   display: grid;
   margin-left: auto;
@@ -105,7 +125,7 @@
 }
 
 .header__elements__button__text {
-  margin-left: 16px;
+  margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 8px;
   font-family: "Work Sans";

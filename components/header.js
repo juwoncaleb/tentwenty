@@ -24,7 +24,7 @@ export default function Header() {
             </div>
             <div>
                 <div className='header__elements__mobile'>
-                    <button className='header__elements__button'>
+                    <button className='header__elements__button_mob'>
                         <p className='header__elements__button__text'>Contact Us</p>
                         <img className='header__elements__button__arrow' src='https://res.cloudinary.com/deotmwbo8/image/upload/v1678044812/tentwenty/shape_1_1_xfiti7.png' />
                     </button>

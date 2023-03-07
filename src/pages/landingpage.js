@@ -66,7 +66,7 @@ export default function LandingPage() {
   return (
     <div>
       {/* HERO SECTION */}
-      <AnimatePresence>
+      <AnimatePresence>   
         {!isClicked && (
           <motion.div variants={variants} initial="hidden" animate="visible" transition={{ duration: 0.5 }} className="landing__page" style={{ backgroundImage: `url(${backgroundImageUrl})` }}>
             <Header />
@@ -86,11 +86,11 @@ export default function LandingPage() {
       {/* SECOND PAGE */}
       {/* TEXTS  ANIMATION*/}
       <div className='Product'>
-        <motion.p className='fonnty' variants={textVariants} initial="hidden" whileInView="visible" >
+        <motion.p className='Product_header_text' variants={textVariants} initial="hidden" whileInView="visible" >
           Quality Product
         </motion.p>
-        <motion.p className='forty' variants={textVariants} initial="hidden" whileInView="visible"  >
-       Commodo elit et ut enim. Incididunt elit velit voluptate labore non ea. Nisi velit duis excepteur culpa enim deserunt deserunt quis ad veniam. Ea eu mollit do duis fugiat duis anim pariatur. Proident duis veniam ad dolor et elit excepteur commodo. Amet adipisicing ipsum nostrud dolore amet labore Lorem laboris do. Cillum sit elit proident qui mollit enim dolor Lorem non.
+        <motion.p className='Product_sub_text' variants={textVariants} initial="hidden" whileInView="visible"  >
+       Commodo elit et ut enim. Incididunt elit velit voluptate labore non ea. Nisi velit duis excepteur culpa enim deserunt deserunt quis ad veniam. Ea eu mollit do duis fugiat duis anim pariatur. Proident duis veniam ad dolor et elit excepteur commodo. Amet adipisicing ipsum nostrud dolore amet labore Lorem laboris do. Cillum sit elit proident qui mollit enim dolor .
         </motion.p>
 
         {/* CAROSEL ANIMATION */}

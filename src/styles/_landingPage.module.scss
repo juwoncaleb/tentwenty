@@ -14,7 +14,7 @@ $Text-color-gray: #7A7777;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  
+
 }
 
 .landing__page_content {
@@ -22,6 +22,26 @@ $Text-color-gray: #7A7777;
   margin-left: 135px;
 }
 
+@media only screen and (max-width: 768px) {
+  .landing__page_content {
+    margin-top: 179px;
+    margin-left: 25px;
+  }
+
+}
+.mobile__nav{
+  background-color: white;
+  color:$Text-color-black ;
+  position: relative;
+  bottom: 30px;
+  font-size: 17px;
+}
+.mobile__nav__link{
+  margin-left: 30px;
+}
+.mobile__nav__items{
+  margin-top: 10px;
+}
 .landing__page_content_Header_welcomeTag {
   font-family: 'Work Sans';
   font-style: normal;
@@ -31,6 +51,33 @@ $Text-color-gray: #7A7777;
   color: $Text-color-white;
   margin-bottom: 24px;
   /* add some bottom margin to create space between this element and the next one */
+}
+
+@media only screen and (max-width: 768px) {
+  .landing__page_content_Header_welcomeTag {
+    font-size: 13px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .landing__page_content_Header_welcomeTag {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+  .landing__page_content_Header_welcomeTag {
+    font-size: 14px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+
+  }
+
 }
 
 .landing__page_content_Header_main {
@@ -44,13 +91,56 @@ $Text-color-gray: #7A7777;
 
 }
 
+@media only screen and (max-width: 768px) {
+  .landing__page_content_Header_main {
+    font-size: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+  .landing__page_content_Header_main {
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 100%;
+    /* or 46px */
+
+    text-transform: capitalize;
+  }
+
+}
+
+
 .landing__page_content__thumb_content {
   position: relative;
   /* Add this to make pseudo-element work */
   height: 138px;
   width: 138px;
-  border: 1px solid #e9ebec;
+  border: 1px solid #524e4a;
   margin-top: 169px;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing__page_content__thumb_content {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #524e4a;
+    margin-top: 100px;
+    position: relative;
+    bottom: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+  .landing__page_content__thumb_content {
+    margin-top: 201px;
+  }
+
 }
 
 .landing__page_content__thumb_content::before {
@@ -78,9 +168,14 @@ $Text-color-gray: #7A7777;
   font-size: 16px;
   line-height: 110%;
   color: $Text-color-white;
+  text-align: center;
   position: relative;
-  top: 57px;
-  left: 50px;
+  top: 42px;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing__page_content__thumb__text {}
+
 }
 
 .landing__page_content__thumb__img {
@@ -89,13 +184,32 @@ $Text-color-gray: #7A7777;
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  .landing__page_content__thumb__img {
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
+
+  }
+
+}
+
 .Product {
   margin-top: 153px;
   text-align: center;
   margin-left: 200px;
   margin-right: 200px;
 }
+@media only screen and (max-width: 768px) {
+  .Product {
+  
+    margin-top: 153px;
+    text-align: center;
+    margin-left: 53px;
+    margin-right: 49px;
+  }
 
+}
 .framer {
   height: 100vh;
   background-color: brown;
@@ -152,22 +266,47 @@ $Text-color-gray: #7A7777;
 }
 
 
-.fonnty {
+.Product_header_text {
   font-size: 50px
 }
+@media only screen and (max-width: 414px) {
+  .landing__page_content {
+    margin-top: 179px;
+    margin-left: 25px;
+    font-size: 30px;
+  }
 
-.forty {
+}
+
+.Product_sub_text {
   margin-bottom: 400px;
   font-size: 25px;
   clip-path: polygon(0, 100%, );
 
 }
+@media only screen and (max-width: 414px) {
+  .Product_sub_text {
+    
+    font-size: 16px;
+  }
+
+}
+
 
 .Product__image__img {
   min-height: 570px;
   min-width: 370px;
   padding: 40px;
 }
+@media only screen and (max-width: 414px) {
+  .Product__image__img {
+    
+    min-height: 370px;
+    min-width: 270px;
+    padding: 40px;  }
+
+}
+
 
 .Product__image__img img {
   width: 100%;
